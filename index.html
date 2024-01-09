@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    
+     <html>
+        <!-- These things are importantin html -->
+        <head>
+            <!-- Web heading -->
+            <title>Skill Education.pk</title>
+
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            
+            <!-- to connect with github repositry -->
+            <link rel="stylesheet" type="text/css" href="https://github.com/githubnot7/skill-education/blob/main/style.css">
+    
+            <!-- These things are importantin html -->
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            
+            <!-- Google fonts -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,500&display=swap" rel="stylesheet">
+            
+            <!-- put from font-awesome -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        </head>
+
+        <body>
+            <!-- page headr --> 
+            <header>
+
+                
+
+                <!-- front page heading -->
+                <div class="topnav" style="background-color: aqua; text-align: left;">
+                    <span class="dot"></span>
+                    <span class="dot1"></span>
+                    <span class="dot2"></span>
+                    <input type="text" placeholder="Search..">
+                </div>
+                <!-- front page heading -->
+                <style>
+                    * {
+                            margin: 0;
+                            padding: 0;
+                            font-family: 'Open Sans', sans-serif;
+                            box-sizing: border-box;
+                        }    
+    
+                        .topnav {
+                            overflow: hidden;
+                            background-color: aqua;
+                        }
+    
+                        /* Style the links inside the navigation bar */
+                        .topnav a {
+                            float: left;
+                            display: block;
+                            color: black;
+                            text-align: center;
+                            padding: 6px 6px;
+                            border-radius: 3%;
+                            text-decoration: none;
+                            font-size: 17px;
+                        }
+                        
+                        /* Change the color of links on hover */
+                        .topnav a:hover {
+                            background-color: #dee2e6;
+                            color: white;
+                        } 
+    
+                        .topnav input[type=text] {
+                            float: center;
+                            padding: 6px;
+                            border: none;
+                            margin-top: 6px;
+                            margin-bottom: 6px;
+                            margin-left: 310px;
+                            font-size: 17px;
+                            width: 500px;
+                        } 
+
+                        .dot {
+                            height: 15px;
+                            width: 15px;
+                            background-color: red;
+                            border-radius: 50%;
+                            display: inline-block;
+                            margin-top: 12px;
+                            margin-left: 16px
+                            
+                        }
+                        .dot1 {
+                            height: 15px;
+                            width: 15px;
+                            background-color: green;
+                            border-radius: 50%;
+                            display: inline-block;
+                            margin-top: 12px;
+                            
+                        }
+
+                        .dot2 {
+                            height: 15px;
+                            width: 15px;
+                            background-color: yellow;
+                            border-radius: 50%;
+                            display: inline-block;
+                            margin-top: 12px;
+                            
+                        }
+                        /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+                        @media screen and (max-width: 768px) {
+                            .topnav a, .topnav input[type=text] {
+                            float: none;
+                            display: block;
+                            text-align: left;
+                            width: 100%;
+                            margin: 0;
+                            padding: 14px;
+                            }
+                            .topnav input[type=text] {
+                            border: 1px solid white;
+                            }
+                        }
+                    </style>
+                <!-- front page banner --> 
+
+                <div class="banner">
+                    <div class="row">
+                        <div class="container">
+
+                            <!-- added this to created space between cells on the picture -->
+                            <div class="brk">
+                            </div>
+                            <nav>
+                                <div class="nav-links" id="navLinks">
+                                    <i class="fa fa-times" onclick="hideMenu()"></i> <!--put this cross icon from font-awesome -->
+                                    <ul>
+                                        <li><a href="#home">Home</a></li>     <!--in ul tag we have to write data in li tag -->
+                                        <li><a href="#about">About Us</a></li>
+                                        <li><a href="#contact">Contact</a></li>
+                                        <li><a href="#login">Login</a></li>
+                                        <li><a href="#register">Register</a></li>
+                                    </ul>
+                                </div>
+                                <i class="fa fa-bars" onclick="showMenu()"></i>       <!--put this cross icon from font-awesome -->
+                            </nav>
+                            
+                            <div class="text-block">
+                                <h1>HTML & CSS COURSE</h1>
+                                <p>Learn Basics of HTM & CSS<br>Even IF you don't have any coding experience</p>
+                                <a href="#" class="btn-primary">Learn Now</a>
+                            </div>
+                            
+                            <!-- added this to created space between cells on the picture -->
+                            <div class="brk1">
+                            </div>
+
+                            <div style="background-color: aqua; text-align: left;">
+                                <div class="col-3 textc"><input type="text1" placeholder="What are you looking for?"></div>
+                                <div class="col-3 textc"><input type="text1" placeholder="Location"></div>
+                                <div class="col-3 textc"><input type="text1" placeholder="All categories"></div>
+                                <div class="col-3 textc"><input type="text1" placeholder="Search"></div>
+                            </div>
+
+                        
+                        </div>
+                    </div>    
+                </div>
+
+                <style>
+                    /* set images according to block/cell/container  */
+                    .img-responsive{
+                        max-width: 100%;
+                        height: auto;
+
+                    }
+
+                    .banner{
+                        width: 100%;
+                        min-height: 90vh;
+                        margin: 0px;
+                        background-image: linear-gradient(rgba(0,6,19,0.9),rgba(0,6,19,0.9)), url('./Images/3.jpg');
+                        background-size: cover;
+                        position: relative;
+                    }
+
+                    .container {
+                        padding-right: 200px;
+                        padding-left: 200px;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+
+                    .nav-links {
+                        background: aqua;
+                        text-align: right;
+                        padding-right: 10px;
+                    }
+
+                    .nav-links li {
+                        list-style: none;
+                        display: inline-block;
+                        padding: 10px 16px;
+                        position: relative;
+                    }
+
+                    .nav-links li a {
+                        color: black;
+                        text-decoration: none;
+                        font-size: 14px;
+                    }
+
+                    nav .fa{
+                        display: none;
+                    }
+
+                    
+                    @media (max-width: 768px) {
+                        nav .fa-bars{
+                            display: block;
+                        }
+                        .fa-bars{
+                            position: absolute;
+                            left: 10px;
+                            top: 30px;
+                            font-size: 22px;
+                            color: #3a0ca3;
+                            cursor: pointer;
+                        }
+
+                            .text-block h1 {
+                            font-size: 30px;
+                        }
+
+                        .nav-links ul li {
+                            display: block;
+                        }
+
+                        .nav-links {
+                            position: absolute;
+                            background: #240046;
+                            height: 200vh;
+                            width: 200px;
+                            text-align: left;
+                            z-index: 2;
+                            top: 0;
+                            left: -200px;
+                            transition: 1s;
+                        }
+
+                        .nav-links .fa {
+                            display: block;
+                            color: white;
+                            margin: 10px;
+                            font-size: 22px;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .text-block{
+                        width: 80%;
+                        color: white;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        text-align: center;
+                        transform: translate(-50%, -50%);
+
+                    }
+
+                    .text-block h1 {
+                        font-size: 60px;
+                    }
+
+                    .text-block p {
+                        font-size: 16px;
+                    }
+
+                    /* button settings  */
+                    .btn-primary {
+                        display: inline-block;
+                        text-decoration: none;
+                        color: white;
+                        border: 2px solid white;
+                        padding: 12px 40px;
+                        font-size: 16px;
+                        background: transparent;
+                        position: relative;
+                        margin: 20px 0px 0px 0px;
+                    }
+
+                    .btn-primary:hover {
+                        border: 2px solid lightblue;
+                        background: lightblue;
+                        color: black;
+                        transition: 0.5s;
+                    }
+
+                    .btn-primary1 {
+                        display: inline-block;
+                        text-decoration: none;
+                        color: black;
+                        border: 2px solid white;
+                        padding: 12px 40px;
+                        font-size: 16px;
+                        background: aqua;
+                        position: relative;
+                        margin: 20px 0px 10px 0px;
+                    }
+
+                    .btn-primary1:hover {
+                        border: 2px solid aqua;
+                        background: aqua;
+                        color: black;
+                        transition: 0.5s;
+                    }
+                    
+                    .input1[type=text] {
+                        float: center;
+                        padding: 10px;
+                        position: absolute;
+                        border: none;
+                        margin-top: 6px;
+                        margin-bottom: 6px;
+                        margin-left: 310px;
+                        font-size: 27px;
+                        width: 500px;
+                    } 
+
+                    .input1[type=text]:hover {
+                        border: 2px solid lightblue;
+                        background: lightblue;
+                        color: black;
+                        transition: 0.5s;
+                    }
+
+                </style>
+
+                <div class="row">
+                    <div class="container">
+                        <div class="col-3">
+                            <img src="./Images/1.jpg" class="img-responsive">
+                            <h3>Heading Of The Blog</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, nesciunt. Beatae veniam reiciendis omnis illum sed voluptatem repudiandae blanditiis debitis nulla consectetur? Corporis molestias numquam recusandae magnam quis soluta mollitia?</p>
+                        </div>
+        
+                        <div class="col-3">
+                            <img src="./Images/1.jpg" class="img-responsive">
+                            <h3>Heading Of The Blog</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, nesciunt. Beatae veniam reiciendis omnis illum sed voluptatem repudiandae blanditiis debitis nulla consectetur? Corporis molestias numquam recusandae magnam quis soluta mollitia?</p>
+                        </div>
+        
+                        <div class="col-3">
+                            <img src="./Images/1.jpg" class="img-responsive">
+                            <h3>Heading Of The Blog</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, nesciunt. Beatae veniam reiciendis omnis illum sed voluptatem repudiandae blanditiis debitis nulla consectetur? Corporis molestias numquam recusandae magnam quis soluta mollitia?</p>
+                        </div>
+        
+                        <div class="col-3">
+                            <img src="./Images/1.jpg" class="img-responsive">
+                            <h3>Heading Of The Blog</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, nesciunt. Beatae veniam reiciendis omnis illum sed voluptatem repudiandae blanditiis debitis nulla consectetur? Corporis molestias numquam recusandae magnam quis soluta mollitia?</p>
+                        </div>
+
+                        <div class="col-4">
+                            <img src="./Images/2.jpg" class="img-responsive">    
+                        </div>
+
+                        <div class="col-4">
+                            <img src="./Images/2.jpg" class="img-responsive">    
+                        </div>
+
+                        <div class="col-4">
+                            <img src="./Images/2.jpg" class="img-responsive">    
+                        </div>
+
+                        <div class="col-6">
+                            <img src="./Images/3.jpg" class="img-responsive">    
+                        </div>
+
+                        <div class="col-6">
+                            <img src="./Images/3.jpg" class="img-responsive">    
+                        </div>
+
+                        <div class="col-4">
+                            <img src="./Images/1.jpg" class="img-responsive">
+                            <h3>Heading Of The Blog</h3>
+                            <h11>by Mark Spiker• Jan 18, 2019 • News</h11>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, nesciunt. Beatae veniam reiciendis omnis illum sed voluptatem repudiandae blanditiis debitis nulla consectetur? Corporis molestias numquam recusandae magnam quis soluta mollitia?</p>
+                        </div>
+
+                        <div class="col-4">
+                            <img src="./Images/1.jpg" class="img-responsive">
+                            <h3>Heading Of The Blog</h3>
+                            <h11>by Mark Spiker• Jan 18, 2019 • News</h11>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, nesciunt. Beatae veniam reiciendis omnis illum sed voluptatem repudiandae blanditiis debitis nulla consectetur? Corporis molestias numquam recusandae magnam quis soluta mollitia?</p>
+                        </div>
+
+                        <div class="col-4">
+                            <img src="./Images/1.jpg" class="img-responsive">
+                            <h3>Heading Of The Blog</h3>
+                            <h11>by Mark Spiker• Jan 18, 2019 • News</h11>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, nesciunt. Beatae veniam reiciendis omnis illum sed voluptatem repudiandae blanditiis debitis nulla consectetur? Corporis molestias numquam recusandae magnam quis soluta mollitia?</p>
+                        </div>
+                        <div>
+                            <a href="https://preview.colorlib.com/#classyads" class="btn-primary1">Web Design Link</a>
+                        </div>
+                    </div>
+
+                    <div style="background-color: aqua; ">
+                        <div class="col-6 top1">
+                            <h3>Lorem ipsum dolor sit amet consectetur</h3><br>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            </div>
+
+                            <div class="col-6 top2">
+                            <h3>Lorem ipsum dolor sit amet consectetur</h3><br>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                    </div>
+
+                    <style>
+                        /* Grid System */ 
+                        .col-1{width: 8.33%;}
+                        .col-2{width: 16.66%;}
+                        .col-3{width: 25%;}
+                        .col-4{width: 33.33%;}
+                        .col-5{width: 41.66%;}
+                        .col-6{width: 50%;}
+                        .col-7{width: 58.33%;}
+                        .col-8{width: 66.66%;}
+                        .col-9{width: 75%;}
+                        .col-10{width: 83.33%;}
+                        .col-11{width: 91.66%;}
+                        .col-12{width: 100%;}
+
+                        /* to make columns */
+
+                        .row::after{
+                            content: " ";
+                            clear: both;
+                            display: table;
+                        }
+
+                        [class*="col-"]{
+                            float: left;
+                            padding: 20px;
+                            color: black;
+                        }
+
+                        .textc{
+                            background: rgba(0,222,222);
+                            position: relative;
+                            transform: translate(-50%,-50%);
+                            top: 50%;
+                            left: 20%;
+                            right: 20%;
+                            max-width: 88rem;
+                            width: 20%;
+                            display: table-column-group;
+                            
+                            align-items: center;
+                            
+                        }
+
+                        .brk{
+                            padding-top: 15px;
+                        }
+
+                        .brk1{
+                            padding-top: 460px;
+                        }
+
+                        .top1 {
+                            overflow: hidden;
+                            background-color: aqua;
+                            padding-top: 5px;
+                            padding-left: 200px;
+                        }
+
+                        .top2 {
+                            overflow: hidden;
+                            background-color: aqua;
+                            padding-top: 5px;
+                            padding-left: 180px;
+                        }
+                     </style>
+                </div>
+                <!-- front page banner --> 
+            <header>    
+
+            <!-- page headr complete --> 
+
+            <!-- page footer --> 
+            <footer>
+
+                <div class="row">
+                    <div class="container">
+    
+                        <div class="col-3">
+                            <h3>About</h3>
+                            <ul class="footer-menu">
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium adipisci autem.</li>
+                            </ul>
+                        </div>
+    
+                        <div class="col-3">
+                            <h3>Navigations</h3>
+                            <ul class="footer-menu">
+                                <li>About</li>
+                                <li>Services</li>
+                                <li>Testimonials</li>
+                                <li>Contact Us</li>
+                            </ul>
+                        </div>
+    
+                        <div class="col-3">
+                            <h3>Follow Us</h3>
+                            <ul class="footer-menu">
+                                <li>First Menu</li>
+                                <li>Second Menu</li>
+                                <li>Third Menu</li>
+                                <li>Fourth Menu</li>
+                            </ul>
+                        </div>
+    
+                        <div class="col-3">
+                            <h3>Contact</h3>
+                            <ul class="footer-menu">
+                                <li>First Menu</li>
+                                <li>Second Menu</li>
+                                <li>Third Menu</li>
+                                <li>Fourth Menu</li>
+                            </ul>
+                        </div>
+    
+                    </div>    
+                </div>
+
+                <style>
+                    footer{
+                            background-color: #343a40;
+                            padding: 70px 0px;
+                            color: white;
+
+                        }
+                        .footer-menu li {
+                        list-style: none;
+                        padding: 5px 0px 0px 0px;
+                        position: relative;
+                        color: #6c757d;
+                        font-size: 16px;
+                    }
+
+                    footer h3 {
+                        padding-bottom: 20px;
+                        color: #6c757d;
+                    }
+
+                </style>
+            </footer>    
+            <!-- page footer complete --> 
+
+            <!-- copyright --> 
+            <div class="copyright">
+                <p>CopyRight @copyright 2021 | Outliers.pk</p>
+            </div>
+
+            <style>
+                
+                .copyright{
+                        background: black;
+                        color: white;
+                        padding: 20px 0px;
+                        text-align: center;
+                    }
+            </style>
+
+
+            <!-- Javascript to show and hide mnue in mobile web -->
+            <script>
+                var navLinks=document.getElementById("navLinks");
+                
+                function showMenu() {
+                    navLinks.style.left="0";
+                }
+    
+                function hideMenu() {
+                    navLinks.style.left="-200px";
+                }
+            </script>
+        </body>
+
+    </html>
+
+</html>
